@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preetham KS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<script src="script.js"></script>
+<body>
+    
+    <main id="main">
+        <header>
+            <div class="logo" >
+                <a href="#main" class="logo-link" id ="logo_a_link"> 
+                    <h1>Preetham KS</h1>
+                </a> 
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#about" data-target="about">About Me</a></li>
+                    <li><a href="#skills" data-target="skills">Skills</a></li>
+                    <li><a href="#internship" data-target="internship">Experience</a></li>
+                    <li><a href="#projects" data-target="projects">Projects</a></li>
+                    <li><a href="#education" data-target="education">Education</a></li>
+                    <li><a href="#certifications" data-target="certifications">Certifications</a></li>
+                    <li><a href="#contact" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        
+        <!-- Hero Section -->
+        <section id="hero" class="visible">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Preetham KS</span></h1>
+                <h2>Jira Administrator & Developer</h2>
+                <p>Specializing in Jira administration, automation, and custom development solutions</p>
+                <div class="cta-buttons">
+                    <a href="#contact" data-target="contact" class="cta-primary">Contact Me</a>
+                    <a href="#projects" data-target="projects" class="cta-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="My photo.jpg" alt="Preetham KS" class="profile-image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="hidden">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I am Preetham KS. I have completed my Bachelor's in Information Science and Engineering from RNS Institute of Technology, Bangalore. I have hands-on experience in Jira administration and development through my internship at Zscaler.</p>
+                    <p>I am passionate about creating efficient workflows, automating processes, and developing custom solutions to improve team productivity. My expertise in Jira, Groovy scripting, and API development allows me to build tailored solutions for complex business problems.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Development</h3>
+                            <p>Custom plugins, REST APIs, and Groovy scripts</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Administration</h3>
+                            <p>Jira configuration, workflow optimization</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Analytics</h3>
+                            <p>Advanced JQL reports and dashboards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Skills Section -->
+<section id="skills" class="hidden">
+    <div class="section-header">
+        <h2>Technical Skills</h2>
+        <div class="underline"></div>
+    </div>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Programming</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i> <!-- Java -->
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i> <!-- Groovy Script -->
+                    <span>Groovy Script</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i> <!-- HTML/CSS -->
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i> <!-- JavaScript -->
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-tasks"></i> <!-- Jira Administration -->
+                    <span>Jira Administration</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i> <!-- SQL/MySQL -->
+                    <span>SQL/MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i> <!-- Git/GitHub -->
+                    <span>Git/GitHub</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-plug"></i> <!-- Script Runner -->
+                    <span>Script Runner</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i> <!-- JQL -->
+                    <span>JQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i> <!-- REST API -->
+                    <span>REST API</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Internship Section -->
+        <section id="internship" class="hidden">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="experience-title">
+                        <h3>Jira Administrator/Developer Intern</h3>
+                        <div class="experience-details">
+                            <span class="company">Zscaler</span>
+                            <span class="duration">March 2024 - September 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <p>During my internship at Zscaler, I managed Jira configuration and customization, including the setup of issue types, priorities, roles, and fields to meet project-specific requirements. I also developed advanced JQL reports and dashboards for in-depth project performance insights and SLA compliance.</p>
+                    <h4>Key Achievements:</h4>
+                    <ul class="achievements-list">
+                        <li><i class="fas fa-check-circle"></i>Developed a custom checklist plugin for enhanced task tracking and created Groovy scripts to automate workflows, increasing efficiency by 30%.</li>
+                        <li><i class="fas fa-check-circle"></i>Created REST API endpoints for automated project setup and bulk updates, reducing manual effort by 40%.</li>
+                        <li><i class="fas fa-check-circle"></i>Managed Agile projects using Kanban and Scrum boards in Jira and Confluence, improving team efficiency.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Jira</span>
+                            <span class="tech-tag">Groovy Script</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Script Runner Plugin</span>
+                            <span class="tech-tag">JQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="hidden">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-pencil-alt project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Handwritten Digit Recognition System</h3>
+                        <p>Developed a digit recognition system using Java, ReactJS, HTML, CSS, and JavaScript to interpret handwritten inputs from documents and images. Achieved an accuracy rate of over 90%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">ReactJS</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-link"></i> View Project</a>
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-heartbeat project-icon"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Health Fitness Management Application</h3>
+                        <p>Built a web-based application using HTML, CSS, JavaScript, and MySQL to manage gym member data and health records, improving data retrieval efficiency by 20%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-link"></i> View Project</a>
+                            <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="hidden">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>Information Science and Engineering</h4>
+                        <p class="education-institution">RNS Institute of Technology, Bangalore</p>
+                        <p class="education-date">Graduated: 2022</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Diploma</h3>
+                        <h4>Computer Science</h4>
+                        <p class="education-institution">PES Polytechnic, Bangalore</p>
+                        <p class="education-date">Graduated: 2016</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="hidden">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Zscaler Internship Certificate</h3>
+                        <p class="issuer">Issued by: Zscaler</p>
+                        <p class="issue-date">Date: 2024</p>
+                        <a href="InternshipCertificate.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Jira Developer, Administrator & Project Managers</h3>
+                        <p class="issuer">Issued by: Udemy</p>
+                        <p class="issue-date">Date: 2024</p>
+                        <a href="https://www.udemy.com/certificate/UC-2eec17e1-05f2-4129-a3a9-c1fa9a2f36bc/" target="_blank" class="view-cert-btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Jira Fundamentals Badge</h3>
+                        <p class="issuer">Issued by: Atlassian</p>
+                        <p class="issue-date">Date: 2024</p>
+                        <a href="https://university.atlassian.com/student/award/3bpdiVmkjyNBNfK75VmNGEe7" target="_blank" class="view-cert-btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Full Stack Java</h3>
+                        <p class="issuer">Issued by: J-Spider</p>
+                        <p class="issue-date">Date: 2023</p>
+                        <a href="https://drive.google.com/file/d/1SbK2xI83u1bu8DN9UQbwVnsDTtYxmn0Y/view" target="_blank" class="view-cert-btn">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:preethamks49@gmail.com">preethamks49@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+919206304677">+91 9206304677</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/preethamks" target="_blank">linkedin.com/in/preethamks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/preethamks" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:preethamks49@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-nav">
+                <a href="#about" data-target="about">About</a>
+                <a href="#skills" data-target="skills">Skills</a>
+                <a href="#projects" data-target="projects">Projects</a>
+                <a href="#contact" data-target="contact">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Preetham KS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
