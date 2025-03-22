@@ -17,14 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.remove("visible");
     });
 
-    // // Navigation link click event
-    // const navLinks = document.querySelectorAll("nav ul li a, .footer-nav a, .cta-buttons a");
-    // navLinks.forEach(link => {
-    //     link.addEventListener("click", (e) => {
-    //         e.preventDefault(); // Prevent default anchor behavior
-    //         const targetId = e.target.getAttribute("data-target");
-    //         const targetSection = document.getElementById(targetId);
-
     // Navigation link click event
     const navLinks = document.querySelectorAll("nav ul li a, .footer-nav a, .cta-buttons a:not(.cta-secondary[href*='.pdf'])");
     navLinks.forEach(link => {
@@ -74,13 +66,28 @@ document.addEventListener("DOMContentLoaded", () => {
         navMenu.classList.toggle("active");
     }
     
-    hamburger.addEventListener("click", toggleMobileMenu);
+    // hamburger.addEventListener("click", toggleMobileMenu);
+    if (hamburger) {
+        hamburger.addEventListener("click", toggleMobileMenu);
+    }
+     // Close mobile menu when a link is clicked
+     const mobileNavLinks = document.querySelectorAll("nav ul li a");
+     mobileNavLinks.forEach(link => {
+         link.addEventListener("click", () => {
+             if (navMenu.classList.contains("active")) {
+                 toggleMobileMenu();
+             }
+         });
+     });
 
-    // Add active class to hamburger on click
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    });
+
+    // // Add active class to hamburger on click
+    // hamburger.addEventListener("click", () => {
+    //     hamburger.classList.toggle("active");
+    //     navMenu.classList.toggle("active");
+    // });
+
+    
 
     // Form submission
     const contactForm = document.getElementById("contactForm");
@@ -155,92 +162,92 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// // Add CSS for mobile menu
-// document.head.insertAdjacentHTML("beforeend", `
-// <style>
-// @media (max-width: 768px) {
-//     nav ul {
-//         display: none;
-//         flex-direction: column;
-//         position: fixed;
-//         top: 70px;
-//         left: 0;
-//         width: 100%;
-//         background-color: white;
-//         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-//         padding: 1rem 0;
-//         align-items: center;
-//         gap: 1rem;
-//     }
+// Add CSS for mobile menu
+document.head.insertAdjacentHTML("beforeend", `
+<style>
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        align-items: center;
+        gap: 1rem;
+    }
     
-//     nav ul.active {
-//         display: flex;
-//     }
+    nav ul.active {
+        display: flex;
+    }
     
-//     .hamburger {
-//         display: block;
-//     }
+    .hamburger {
+        display: block;
+    }
     
-//     .hamburger.active .bar:nth-child(1) {
-//         transform: translateY(8px) rotate(45deg);
-//     }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
     
-//     .hamburger.active .bar:nth-child(2) {
-//         opacity: 0;
-//     }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
     
-//     .hamburger.active .bar:nth-child(3) {
-//         transform: translateY(-8px) rotate(-45deg);
-//     }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
     
-//     header.scrolled {
-//         padding: 0.5rem 5%;
-//         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-//     }
+    header.scrolled {
+        padding: 0.5rem 5%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
     
-//     #hero {
-//         flex-direction: column;
-//         text-align: center;
-//         padding: 2rem 5%;
-//         gap: 2rem;
-//     }
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+        gap: 2rem;
+    }
     
-//     .hero-content {
-//         order: 2;
-//     }
+    .hero-content {
+        order: 2;
+    }
     
-//     .hero-image {
-//         order: 1;
-//         width: 250px;
-//         height: 250px;
-//     }
+    .hero-image {
+        order: 1;
+        width: 250px;
+        height: 250px;
+    }
     
-//     .about-highlights {
-//         flex-direction: column;
-//     }
+    .about-highlights {
+        flex-direction: column;
+    }
     
-//     .experience-header {
-//         flex-direction: column;
-//         text-align: center;
-//     }
+    .experience-header {
+        flex-direction: column;
+        text-align: center;
+    }
     
-//     .experience-details {
-//         flex-direction: column;
-//         gap: 0.5rem;
-//         align-items: center;
-//     }
+    .experience-details {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
     
-//     .projects-container {
-//         grid-template-columns: 1fr;
-//     }
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
     
-//     .project-card {
-//         flex-direction: column;
-//     }
+    .project-card {
+        flex-direction: column;
+    }
     
-//     .contact-content {
-//         flex-direction: column;
-//     }
-// }
-// </style>
-// `);
+    .contact-content {
+        flex-direction: column;
+    }
+}
+</style>
+`);
