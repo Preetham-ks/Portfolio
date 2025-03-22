@@ -17,10 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.remove("visible");
     });
 
+    // // Navigation link click event
+    // const navLinks = document.querySelectorAll("nav ul li a, .footer-nav a, .cta-buttons a");
+    // navLinks.forEach(link => {
+    //     link.addEventListener("click", (e) => {
+    //         e.preventDefault(); // Prevent default anchor behavior
+    //         const targetId = e.target.getAttribute("data-target");
+    //         const targetSection = document.getElementById(targetId);
+
     // Navigation link click event
-    const navLinks = document.querySelectorAll("nav ul li a, .footer-nav a, .cta-buttons a");
+    const navLinks = document.querySelectorAll("nav ul li a, .footer-nav a, .cta-buttons a:not(.cta-secondary[href*='.pdf'])");
     navLinks.forEach(link => {
         link.addEventListener("click", (e) => {
+            // Skip if the link is the "View Resume" button
+            if (link.classList.contains("cta-secondary") && link.getAttribute("href").includes(".pdf")) {
+                return; // Allow default behavior (open in new tab)
+            }
+
             e.preventDefault(); // Prevent default anchor behavior
             const targetId = e.target.getAttribute("data-target");
             const targetSection = document.getElementById(targetId);
@@ -52,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Mobile menu toggle
+// Mobile menu toggle
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector("nav ul");
     
