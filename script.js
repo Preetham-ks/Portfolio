@@ -80,15 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
          });
      });
 
-
-    // // Add active class to hamburger on click
-    // hamburger.addEventListener("click", () => {
-    //     hamburger.classList.toggle("active");
-    //     navMenu.classList.toggle("active");
-    // });
-
-    
-
     // Form submission
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
