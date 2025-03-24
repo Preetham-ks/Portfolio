@@ -143,6 +143,25 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(skillsSection);
     }
 
+    // Additional skills
+       document.getElementById('toggleBtn').addEventListener('click', function() {
+        const additionalSkills = document.getElementById('additionalSkillsGrid');
+        const plusIcon = this.querySelector('.plus-icon');
+        const minusIcon = this.querySelector('.minus-icon');
+        
+        if (additionalSkills.style.display === 'none') {
+            additionalSkills.style.display = 'grid';
+            additionalSkills.classList.add('fade-in');
+            plusIcon.style.display = 'none';
+            minusIcon.style.display = 'inline';
+        } else {
+            additionalSkills.style.display = 'none';
+            plusIcon.style.display = 'inline';
+            minusIcon.style.display = 'none';
+        }
+    });
+
+
     // Add click event to project cards for potential expansion
     const projectTitles = document.querySelectorAll(".project-title");
     projectTitles.forEach(title => {
