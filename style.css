@@ -399,7 +399,7 @@ section.hidden {
 .skill-card span {
     font-weight: 600;
     font-size: 0.90rem; 
-    width: 145%;
+    width: 146%;
     text-overflow: ellipsis;
     padding: 0 5px;
 } 

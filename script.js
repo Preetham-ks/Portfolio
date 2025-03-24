@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(skillsSection);
     }
 
-    // Additional skills
+    // Additional skills hidden and display
        document.getElementById('toggleBtn').addEventListener('click', function() {
         const additionalSkills = document.getElementById('additionalSkillsGrid');
         const plusIcon = this.querySelector('.plus-icon');
